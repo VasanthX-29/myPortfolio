@@ -1,0 +1,16 @@
+#footerId
+{
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+
+

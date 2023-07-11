@@ -1,0 +1,27 @@
+.container
+{
+    color: white;
+}
+.c-row
+{
+    height: 500px;
+  
+}
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#introTitle
+{
+    font-size: 25px;
+    margin: 5px 0px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+#emailIcon
+{
+    padding: 3px;
+}

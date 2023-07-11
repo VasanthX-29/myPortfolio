@@ -1,0 +1,55 @@
+.c-row
+{
+    height: 500px;
+  
+}
+.container
+{
+    color: white;
+}
+img {
+   
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#projectTitle
+{
+    font-size: 25px;
+    margin: 5px 0px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+#projectDiv
+{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 3px;
+    row-gap: 3px;
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color:white;
+    background-color: rgba(0, 0, 0, .3);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, .3);
+    height: 500px;
+
+}
+.projectContent
+{
+   
+    width: 500px;
+    height: 150px;
+    padding: 3px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+
+}
+h4{
+    
+    font-weight: bold;
+   
+}

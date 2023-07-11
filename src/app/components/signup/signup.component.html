@@ -1,0 +1,45 @@
+<div class="container signupCont">
+  <div id="signupTitle">SIGN UP</div>
+  <div>
+    <form #userForm="ngForm" (ngSubmit)="submit(userForm)" id="signupForm" class="w-50 mx-auto">
+      <div class="form-group">
+        <label for="exampleInputPassword1">Full name</label>
+        <input required type="text" name="nameOfPerson"  class="form-control" id="exampleInputPassword1" placeholder="Full name" ngModel #name="ngModel">
+        <div id="alertDiv" *ngIf=" name.touched && name.invalid" class="alert alert-danger">
+          <p>Name is required</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">DOB</label>
+        <input required type="date"  name="dobOfPerson"  class="form-control" id="exampleInputPassword1" placeholder="Date of birth" ngModel #dob="ngModel">
+        <div id="alertDiv" *ngIf=" dob.touched && dob.invalid" class="alert alert-danger">
+          <p>Date of Birth is required</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input required type="email"   name="emailOfPerson"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email" ngModel #email="ngModel">
+          <div id="alertDiv" *ngIf=" email.touched && email.invalid" class="alert alert-danger">
+            <p>Email is required</p>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input required type="password" name="pwdOfPerson"  class="form-control" id="exampleInputPassword1" placeholder="Password" ngModel #password="ngModel">
+        <div id="alertDiv" *ngIf=" password.touched && password.invalid" class="alert alert-danger">
+          <p>Password is required</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Confirm Password</label>
+        <input required ="password"  name="cpwdOfPerson" class="form-control" id="exampleInputPassword1" placeholder="Password" ngModel #confirmpassword="ngModel">
+        <div id="alertDiv" *ngIf=" confirmpassword.touched && confirmpassword.invalid" class="alert alert-danger">
+          <p>Confirm password is required</p>
+        </div>
+      </div>
+      <button type="submit"  class="btn btn-primary"  [disabled]="userForm.invalid">Submit</button>
+    </form>
+  </div>
+
+</div>

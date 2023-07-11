@@ -1,0 +1,55 @@
+.c-row
+{
+    height: 500px;
+  
+}
+.container
+{
+    color: white;
+}
+img {
+   
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#eduTitle
+{
+    font-size: 25px;
+    margin: 5px 0px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+#eduDiv
+{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 7px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color:white;
+    background-color: rgba(0, 0, 0, .3);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, .3);
+    height: 500px;
+
+}
+.eduContent
+{
+   
+    width: 500px;
+    height: 80px;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+
+}
+h4{
+    text-transform:uppercase;
+    font-weight: bold;
+   
+}
